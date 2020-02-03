@@ -34,6 +34,8 @@ def smallest_num():
     """Problem 5: return smallest number that is divisible by all numbers from 1 to 20"""
     num = 1
     i = 1
+    for i in nums:
+        if num % i == 0
     while i >= 20:
         if num % i == 0:
             i += 1
@@ -41,6 +43,10 @@ def smallest_num():
             num += 1
             i = 1
     return num
+
+def sum_square_dif(n):
+    """Problem 6: difference between sum of squares of first n numbers and the surm of the frist n numbers squared"""
+
 
 if __name__ == "__main__":
     print(smallest_num())
