@@ -31,22 +31,23 @@ def palindrome():
     return max(palindromes)
 
 def smallest_num():
+# not solved
     """Problem 5: return smallest number that is divisible by all numbers from 1 to 20"""
     num = 1
     i = 1
-    for i in nums:
-        if num % i == 0
-    while i >= 20:
-        if num % i == 0:
-            i += 1
-        else:
-            num += 1
-            i = 1
-    return num
+    pass
 
 def sum_square_dif(n):
     """Problem 6: difference between sum of squares of first n numbers and the surm of the frist n numbers squared"""
+    sum_square = 0
+    square_sum = 0
+    for i in range(1, n+1):
+        sum_square += i**2
+        square_sum += i
+    return (square_sum ** 2) - sum_square
+
+
 
 
 if __name__ == "__main__":
-    print(smallest_num())
+    print(sum_square_dif(100))
